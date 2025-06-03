@@ -11,6 +11,7 @@ import Kontakt from './pages/Kontakt';
 import Team from './pages/Team';
 import Impressum from './pages/Impressum';
 import Preisliste from './pages/Preisliste';
+import Datenschutz from './pages/Datenschutz';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/preisliste" element={<Preisliste />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
           
 
         </Routes>
