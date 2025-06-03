@@ -1,0 +1,101 @@
+.team-wrapper {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.team-heading {
+  font-family: 'Bauhaus93', sans-serif;
+  font-size: 2rem;
+  color: #f39415;
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.team-member {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.team-role {
+  font-size: 0.95rem;
+  color: #f39415;
+  margin-bottom: 0.5rem;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Abstand zwischen den Icons */
+  margin-top: 1rem;
+}
+
+.team-icons img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(85%);
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* GitHub-Icon größer */
+.github-icon {
+  height: 40px;
+}
+
+/* Mail-Icon etwas kleiner */
+.mail-icon {
+  height: 32px;
+}
+
+/* GitHub-Icon etwas größer */
+.team-icons a:first-child img {
+  height: 40px;
+}
+
+.team-icons a:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.team-description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-description h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.team-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+}
