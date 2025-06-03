@@ -1,0 +1,166 @@
+.referenzen-wrapper {
+  background-color: #f5f5f5;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.referenzen-title {
+  font-family: 'Bauhaus93', sans-serif;
+  font-size: 2.5rem;
+  color: #f39415;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.referenzen-intro {
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* --- Einzelner Projektblock --- */
+.referenz-block {
+  width: 100%;
+  max-width: 900px;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #ccc;
+}
+
+/* Eingebettete Website im Scale-Trick */
+.iframe-wrapper {
+  width: 125%;
+  height: 800px;
+  transform: scale(0.8);
+  transform-origin: top;
+  border: 2px solid #f39415;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- Inhalt darunter --- */
+.referenz-content {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.referenz-title {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: -10rem;
+}
+
+.referenz-subline {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Technik-Icon & Liste */
+.referenz-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.tech-icon {
+  width: 32px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(58%) sepia(69%) saturate(698%) hue-rotate(-10deg) brightness(103%) contrast(98%);
+}
+
+.referenz-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.referenz-list li {
+  background-color: #eee;
+  color: #333;
+  font-size: 0.95rem;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+
+
+.referenz-list li:last-child::after {
+  content: "";
+}
+
+/* Call-to-Action Button */
+.madways-button {
+  background-color: #f39415;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Bauhaus93', sans-serif;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+
+.madways-button-pointer::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 0.6em solid transparent;
+  border-right: 0.6em solid transparent;
+  border-top: 0.6em solid #f39415;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 600px) {
+  .iframe-wrapper {
+    transform: scale(0.75);
+    width: 133%; /* 100 / 0.75 */
+    height: 900px;
+  }
+
+
+  .referenz-list li {
+    font-size: 0.95rem;
+  }
+
+  .referenz-title {
+    font-size: 1.3rem;
+  }
+}
