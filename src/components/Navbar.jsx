@@ -27,9 +27,13 @@ const Navbar = ({ isOpen, setIsOpen, isDesktop }) => {
       )}
 
       {/* Overlay bei mobilem Menü */}
-      {isOpen && !isDesktop && (
-        <div className="navbar-overlay" onClick={closeMenu}></div>
-      )}
+      {!isDesktop && !isOpen && (
+  <button className="burger-button" onClick={toggleMenu} aria-label="Menü öffnen">
+    <span className="burger-line"></span>
+    <span className="burger-line"></span>
+    <span className="burger-line"></span>
+  </button>
+)}
 
       {/* Sidebar-Menü */}
       <aside className={`navbar ${isOpen || isDesktop ? 'open' : ''}`}>
