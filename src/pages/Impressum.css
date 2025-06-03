@@ -1,0 +1,50 @@
+.impressum-wrapper {
+  background-color: white;
+  color: #333;
+  padding: 4rem 2rem;
+  font-family: 'Exo2';
+  line-height: 1.6;
+}
+
+.impressum-content {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+
+.impressum-content h1 {
+  font-size: 2rem;
+  color: #f39415;
+  margin-bottom: 2rem;
+}
+
+.impressum-content h2 {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.impressum-content h2.orange {
+  color: #f39415;
+}
+
+.impressum-content h3 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.impressum-content a {
+  color: #f39415;
+  text-decoration: none;
+}
+
+.impressum-content a:hover {
+  text-decoration: underline;
+}
+
+.impressum-content p {
+  margin-bottom: 1.5rem;
+}

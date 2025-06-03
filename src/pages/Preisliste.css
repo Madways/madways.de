@@ -1,0 +1,55 @@
+.preisliste-wrapper {
+  background: white;
+  padding: 4rem 2rem;
+  font-family: 'Exo2', sans-serif;
+  color: #333;
+}
+
+.preisliste-title {
+  color: #f39415;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.preistabelle section {
+  margin-bottom: 3rem;
+}
+
+.preistabelle h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+thead th {
+  background: #eaeaea;
+  font-weight: bold;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+tbody td {
+  padding: 0.6rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+tbody tr:first-child td {
+  border-top: none;
+}
+
+.preise td {
+  font-weight: bold;
+}
+
+.hinweis {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
+

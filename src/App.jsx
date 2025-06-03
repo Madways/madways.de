@@ -9,6 +9,8 @@ import Kompetenzen from './pages/Kompetenzen';
 import Referenzen from './pages/Referenzen';
 import Kontakt from './pages/Kontakt';
 import Team from './pages/Team';
+import Impressum from './pages/Impressum';
+import Preisliste from './pages/Preisliste';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +34,10 @@ function App() {
           <Route path="/referenzen" element={<Referenzen />} />
           <Route path="/team" element={<Team />} />
           <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/preisliste" element={<Preisliste />} />
+          
+
         </Routes>
       </div>
     </Router>

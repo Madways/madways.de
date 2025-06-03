@@ -28,7 +28,7 @@ function Kontakt() {
 
         <footer className="kontakt-footer">
           <a href="/impressum">Impressum</a>
-          <a href="/agb">AGB</a>
+          <a href="/Madways-UG_AGBs_November2020.pdf" target="_blank" rel="noreferrer">AGB</a>
           <a href="/preisliste">Preisliste</a>
         </footer>
       </section>
