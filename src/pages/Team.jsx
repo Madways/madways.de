@@ -7,19 +7,7 @@ function Team() {
       <h1 className="team-heading">TEAM</h1>
 
       <div className="team-members">
-        <div className="team-member">
-          <img src="/team/calle_neu.jpg" alt="Carl-Martin Görsch" className="team-photo" />
-          <h3>Carl-Martin Görsch</h3>
-          <p className="team-role">Grafik-Designer, Screendesigner</p>
-         <div className="team-icons">
-  <a href="https://github.com/cmgoersch" target="_blank" rel="noopener noreferrer">
-    <img src="/github.svg" alt="GitHub" className="github-icon" />
-  </a>
-  <a href="mailto:goersch@madways.de">
-    <img src="/logo.svg" alt="Madways Mail" className="mail-icon" />
-  </a>
-</div>
-        </div>
+   
 
         <div className="team-member">
           <img src="/team/morbi.jpg" alt="Lukas Mohrbacher" className="team-photo" />
@@ -34,6 +22,20 @@ function Team() {
   </a>
 </div>
       </div>
+
+           <div className="team-member">
+          <img src="/team/calle_neu.jpg" alt="Carl-Martin Görsch" className="team-photo" />
+          <h3>Carl-Martin Görsch</h3>
+          <p className="team-role">Web Developer, Grafik-Designer</p>
+         <div className="team-icons">
+  <a href="https://github.com/cmgoersch" target="_blank" rel="noopener noreferrer">
+    <img src="/github.svg" alt="GitHub" className="github-icon" />
+  </a>
+  <a href="mailto:goersch@madways.de">
+    <img src="/logo.svg" alt="Madways Mail" className="mail-icon" />
+  </a>
+</div>
+        </div>
        </div>
 
       <div className="team-description">
