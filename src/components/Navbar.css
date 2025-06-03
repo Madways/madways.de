@@ -1,0 +1,146 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14em;
+  height: 100%;
+  background: #575757;
+  color: white;
+  padding: 1em;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  /* Transformation standardmäßig versteckt */
+  transform: scale(0) translate(-100%, -100%);
+  transform-origin: top left;
+  opacity: 0;
+
+  /* ✨ TRANSITION-ZEITEN UNTERSCHIEDLICH ✨ */
+  transition: transform 0.9s ease-in-out, opacity 0.2s ease-in;
+}
+
+.navbar.open {
+  transform: scale(1) translate(0, 0);
+  opacity: 1;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  padding: 1em 1em 0 0em; 
+}
+
+.navbar nav {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+
+.navbar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Bauhaus93', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.3em;
+  margin: 0.2em 0;
+}
+
+nav a.active {
+  color: #f39415;
+}
+
+.navbar nav a {
+  font-size: 1.4em;
+  margin-left: 0.4em;
+}
+.navbar.open {
+  left: 0;
+}
+
+.logo {
+  width: 100px;
+  margin: 2em auto 2em auto; 
+  display: block; 
+}
+
+
+
+/* Overlay bei Mobile-Menü */
+/* .navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 900;
+} */
+
+/* Burger */
+.burger-button {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+  font-size: 2em;
+  width: 2rem;
+  height: 2rem;
+  background: #575757;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Close (X) oben rechts */
+.close-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer-Bereich am unteren Rand */
+.navbar-footer {
+  margin-top: auto;
+}
+
+/* Kontakt-Link besonders hervorheben */
+.kontakt-link {
+  background-color: #f39415;
+  color: #575757;
+  padding: 1em;
+  font-weight: bold;
+  font-family: 'Bauhaus93', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1.4em;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+ 
+}
+
+.github-icon {
+  display: block;
+  width: 3em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.github-icon img {
+  width: 100%;
+  height: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
+  transition: filter 0.2s ease;
+}
+
+.github-icon:hover img {
+  filter: invert(56%) sepia(81%) saturate(563%) hue-rotate(4deg) brightness(104%) contrast(97%);
+}

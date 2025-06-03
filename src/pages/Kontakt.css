@@ -1,0 +1,63 @@
+.kontakt-wrapper {
+  background-color: #f39415;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Standard: oben */
+  justify-content: flex-start;
+  padding: 4rem 2rem;
+  color: #333;
+  font-family: sans-serif;
+
+  transition: all 0.3s ease;
+}
+
+/* Wenn breiter Bildschirm → Inhalt unten anzeigen */
+@media (min-width: 768px) {
+  .kontakt-wrapper {
+    align-items: flex-end;
+  }
+}
+
+.kontakt-inhalt {
+  max-width: 600px;
+  width: 100%;
+}
+
+.kontakt-inhalt h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.kontakt-block {
+  border-top: 2px solid #333;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.kontakt-inhalt h3 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-top: 2px solid #333;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kontakt-footer {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.kontakt-footer a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.kontakt-footer a:hover {
+  text-decoration: underline;
+}
