@@ -20,7 +20,7 @@ function Kontakt() {
             Steinstraße 23<br />
             76133 Karlsruhe<br />
             Telefon: +49 (0) 1602054517<br />
-            Mail: <a href="mailto:kontakt@madways.de">kontakt@madways.de</a>
+            Mail: <a className='mail' href="mailto:kontakt@madways.de">kontakt@madways.de</a>
           </p>
         </div>
 
