@@ -37,8 +37,9 @@
   border-bottom: 3px solid #ccc;
 }
 
-/* Eingebettete Website im Scale-Trick */
+/* Eingebettete Website oder Platzhalter */
 .iframe-wrapper {
+  position: relative;
   width: 125%;
   height: 800px;
   transform: scale(0.8);
@@ -53,6 +54,50 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* Platzhalter bei blockierten iFrames */
+.iframe-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+  border: 2px dashed #ccc;
+  font-size: 0.95rem;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.iframe-placeholder p {
+  margin-bottom: 1rem;
+}
+
+.iframe-placeholder button {
+  background-color: #f39415;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.iframe-placeholder button:hover {
+  background-color: #e3800f;
 }
 
 /* --- Inhalt darunter --- */
@@ -110,8 +155,6 @@
   font-weight: 500;
 }
 
-
-
 .referenz-list li:last-child::after {
   content: "";
 }
@@ -154,7 +197,6 @@
     width: 133%; /* 100 / 0.75 */
     height: 900px;
   }
-
 
   .referenz-list li {
     font-size: 0.95rem;

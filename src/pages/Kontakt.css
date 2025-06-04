@@ -2,22 +2,20 @@
   background-color: #f39415;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   padding: 2rem;
   color: #575757;
 }
 
-/* Inhalt bleibt oben auf Mobile */
 .kontakt-inhalt {
   max-width: 300px;
   width: 100%;
   margin-top: 0;
 }
 
-/* Inhalt wird nach unten gedrückt – aber nur auf Desktop */
 @media (min-width: 768px) {
   .kontakt-wrapper {
-    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -26,36 +24,23 @@
   }
 }
 
+/* E-Mail Link */
 .mail {
-    color: white;
+  color: white;
+  text-decoration: none;
 }
 
-/* .mail:hover{
-    color: #575757;
-} */
-
-.kontakt-inhalt h2 {
-    margin-top: 4rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.mail:hover {
   color: #575757;
 }
 
+/* Überschriften */
 .kontakt-inhalt h2 {
-    margin-top: 4rem;
+  margin-top: 4rem;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #575757;
-}
-
-.kontakt-block {
-  border-top: 2px solid #575757;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
 }
 
 .kontakt-inhalt h3 {
@@ -66,10 +51,32 @@
   margin-bottom: 2rem;
 }
 
+/* Inhaltlicher Block */
+.kontakt-block {
+  border-top: 2px solid #575757;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Footer-Bereich */
 .kontakt-footer {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 0.85rem;
+  margin-top: 2rem;
+}
+
+.footer-links-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-consent-row {
+  margin-top: 0.5rem;
 }
 
 .kontakt-footer a {
@@ -79,6 +86,5 @@
 }
 
 .kontakt-footer a:hover {
-  text-decoration: none;
   color: #575757;
 }

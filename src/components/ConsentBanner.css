@@ -1,0 +1,64 @@
+.consent-banner {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  width: 280px;
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.datenschutz-link {
+  display: inline-block;
+  margin-top: 0.75rem; /* Abstand nach oben */
+  font-size: 0.75rem;
+  color: #666;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+}
+
+.datenschutz-link:hover {
+  color: #f39415;
+  text-decoration: none;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.consent-buttons {
+  display: flex;
+  justify-content: center;   
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.consent-banner button {
+  background: #f39415;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.75rem;
+
+  cursor: pointer;
+}
+
+.consent-banner .decline {
+  background: #ddd;
+  color: #444;
+}

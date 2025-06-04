@@ -90,18 +90,37 @@ const projekte = [
   // }
 ];
 
-function Referenzen() {
+function Referenzen({ consentGiven }) {
   return (
     <div className="referenzen-wrapper">
       <h1 className="referenzen-title">REFERENZEN</h1>
-       <p className="referenzen-intro">
-          Hier ist ein Überblick über unsere letzten Projekte.
-        </p>
+      <p className="referenzen-intro">
+        Hier ist ein Überblick über unsere letzten Projekte.
+      </p>
 
       {projekte.map((projekt, index) => (
         <div className="referenz-block" key={index}>
           <div className="iframe-wrapper">
-            <iframe src={projekt.url} title={projekt.title} />
+            {consentGiven ? (
+              <iframe src={projekt.url} title={projekt.title} />
+            ) : (
+              <div className="iframe-placeholder">
+  <p>
+    <strong>Wir möchten dir hier eingebundene Webseiten zeigen die wir entwickelt haben.</strong> <br/>
+    Der Inhalt dieser Webseite wird von einer externen Quelle geladen.
+    Um ihn anzuzeigen, benötigen wir deine Zustimmung zu externen Inhalten.<br/> Bitte bestätige das über diesen Button um fort zu fahren :)
+    
+  </p>
+  <button
+    onClick={() => {
+      localStorage.setItem('madwaysConsent', 'true');
+      window.location.reload();
+    }}
+  >
+    Inhalt der externen Webseiten laden
+  </button>
+</div>
+            )}
           </div>
 
           <div className="referenz-content">
@@ -109,13 +128,13 @@ function Referenzen() {
             <p className="referenz-subline">{projekt.beschreibung}</p>
 
             <div className="referenz-meta">
-  <img src={projekt.technik} alt="Technologie" className="tech-icon" />
-  <ul className="referenz-list">
-    {projekt.leistungen.map((punkt, i) => (
-      <li key={i}>{punkt}</li>
-    ))}
-  </ul>
-</div>
+              <img src={projekt.technik} alt="Technologie" className="tech-icon" />
+              <ul className="referenz-list">
+                {projekt.leistungen.map((punkt, i) => (
+                  <li key={i}>{punkt}</li>
+                ))}
+              </ul>
+            </div>
 
             <a
               href={projekt.url}

@@ -72,7 +72,9 @@ function Datenschutz() {
           Datenschutzerklärung von <a href="https://www.e-recht24.de" target="_blank" rel="noreferrer">eRecht24</a>,
           dem Portal zum Internetrecht von Rechtsanwalt Sören Siebert.
         </p>
+        
       </div>
+      
     </div>
   );
 }

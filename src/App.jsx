@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import ConsentBanner from './components/ConsentBanner';
 
 import Madways from './pages/Madways';
 import Kompetenzen from './pages/Kompetenzen';
@@ -16,6 +17,7 @@ import Datenschutz from './pages/Datenschutz';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+  const [consentGiven, setConsentGiven] = useState(false); 
 
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 768);
@@ -27,19 +29,18 @@ function App() {
 
   return (
     <Router>
+      <ConsentBanner onAccept={setConsentGiven} /> 
       <Navbar isOpen={menuOpen} setIsOpen={setMenuOpen} isDesktop={isDesktop} />
       <div className={`main-content ${shouldShift ? 'shifted' : ''}`}>
         <Routes>
           <Route path="/" element={<Madways />} />
           <Route path="/kompetenzen" element={<Kompetenzen />} />
-          <Route path="/referenzen" element={<Referenzen />} />
+          <Route path="/referenzen" element={<Referenzen consentGiven={consentGiven} />} />
           <Route path="/team" element={<Team />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/preisliste" element={<Preisliste />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
-          
-
         </Routes>
       </div>
     </Router>
