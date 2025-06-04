@@ -52,6 +52,9 @@ function Madways() {
           ZU UNSEREN KOMPETENZEN
           <span className="madways-button-pointer"></span>
         </a>
+        <a href="https://www.vecteezy.com/video/10290449-paved-road-in-open-field-disappears-on-wooded-horizon-line" className="attribution-button" target="_blank" rel="noopener noreferrer">
+  Illustration: Vecteezy
+</a>
       </div>
     </div>
   );

@@ -106,3 +106,24 @@
     font-size: 1rem;
   }
 }
+
+.attribution-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.6rem;
+  color: #aeaeae;
+  border: 1px solid #aeaeae;
+  background: transparent;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+}
+
+.attribution-button:hover {
+  opacity: 1;
+}
