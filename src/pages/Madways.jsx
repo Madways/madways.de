@@ -25,15 +25,16 @@ function Madways() {
   return (
     <div className="madways-hero">
       <video
-        className="madways-video-bg"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Dein Browser unterstützt das Video nicht.
-      </video>
+  className="madways-video-bg"
+  autoPlay
+  loop
+  muted
+  playsInline
+  poster="/road.jpg"
+>
+  <source src={videoSrc} type="video/mp4" />
+  Dein Browser unterstützt das Video nicht.
+</video>
 
       <div className="madways-overlay">
         <h1 className="madways-title">
