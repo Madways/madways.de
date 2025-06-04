@@ -1,8 +1,40 @@
+import { useEffect, useState } from "react";
 import './Madways.css';
 
 function Madways() {
+  const [videoSrc, setVideoSrc] = useState("/video/road_middle.mp4");
+
+  useEffect(() => {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+
+    if (connection) {
+      const { effectiveType, downlink, saveData } = connection;
+
+      if (saveData) {
+        setVideoSrc("/video/road_small.mp4");
+      } else if (effectiveType === "4g" && downlink > 5) {
+        setVideoSrc("/video/road_big.mp4");
+      } else if (effectiveType === "3g" || downlink <= 2) {
+        setVideoSrc("/video/road_small.mp4");
+      } else {
+        setVideoSrc("/video/road_middle.mp4");
+      }
+    }
+  }, []);
+
   return (
     <div className="madways-hero">
+      <video
+        className="madways-video-bg"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={videoSrc} type="video/mp4" />
+        Dein Browser unterstützt das Video nicht.
+      </video>
+
       <div className="madways-overlay">
         <h1 className="madways-title">
           Erfolgreich auftreten.<br />

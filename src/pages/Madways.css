@@ -1,35 +1,52 @@
 .madways-hero {
-  background-image: url('/Hintergrund.jpg');
-  background-size: cover;
-  background-position: center;
+  position: relative;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
+}
+
+.madways-video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .madways-overlay {
+  z-index: 1;
   padding: 2rem;
-  max-width: 750px; 
+  max-width: 750px;
+  margin-top: -21rem; /* z. B. -3rem nach oben */
 }
 
+/* Haupttitel */
 .madways-title {
   font-size: 3rem;
   font-weight: bold;
-  /* color: #fff; */
   color: #f39415;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
+/* Hervorgehobener Text im Titel */
+.madways-title .highlight {
+  color: inherit;
+}
+
+/* Untertitel (einleitender Absatz) */
 .madways-subtext {
   font-size: 1.1rem;
   color: #575757;
   margin-bottom: 1rem;
 }
 
+/* Beschreibung unter dem Untertitel */
 .madways-description {
   font-size: 1.2rem;
   color: #575757;
@@ -37,19 +54,23 @@
   margin-bottom: 2rem;
 }
 
+/* Button (wie auf Startseite) */
 .madways-button {
   background-color: #f39415;
   color: #fff;
   padding: 0.8em 1.5em;
-  text-decoration: none;
   font-size: 1.1rem;
-   font-weight: bold;
+  font-weight: bold;
   font-family: 'Bauhaus93', sans-serif;
   letter-spacing: 0.05em;
-  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
   position: relative;
+  display: inline-block;
 }
 
+/* Button-Pfeil (optional) */
 .madways-button-pointer::after {
   content: "";
   position: absolute;
@@ -61,4 +82,27 @@
   border-left: 0.6em solid transparent;
   border-right: 0.6em solid transparent;
   border-top: 0.6em solid #f39415;
+}
+
+/* --- Responsive Anpassungen --- */
+@media (max-width: 768px) {
+
+  .madways-overlay {
+  z-index: 1;
+  padding: 2rem;
+  max-width: 750px;
+  margin-top: -14rem; /* z. B. -3rem nach oben */
+}
+
+  .madways-title {
+    font-size: 2.2rem;
+  }
+
+  .madways-description {
+    font-size: 1rem;
+  }
+
+  .madways-subtext {
+    font-size: 1rem;
+  }
 }

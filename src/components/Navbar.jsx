@@ -39,7 +39,7 @@ const Navbar = ({ isOpen, setIsOpen, isDesktop }) => {
       <aside className={`navbar ${isOpen || isDesktop ? 'open' : ''}`}>
         {/* Schließen (X) Button bei Mobile */}
         {!isDesktop && (
-          <button className="close-button" onClick={closeMenu}>×</button>
+          <button className="close-button" onClick={closeMenu}>x</button>
         )}
 
         {/* Logo mit Link zur Startseite */}
