@@ -1,6 +1,6 @@
 .madways-hero {
   display: flex;
-  align-items: flex-start; /* statt center */
+  align-items: flex-start; 
   justify-content: center;
   height: 100vh;
   position: relative;
@@ -14,7 +14,7 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1; /* wichtig: kleiner als der Button */
+  z-index: -1; 
 }
 
 .madways-overlay {
@@ -29,7 +29,6 @@
   z-index: 1;
 }
 
-/* Haupttitel */
 .madways-title {
   font-size: 3rem;
   font-weight: bold;
@@ -38,19 +37,16 @@
   margin-bottom: 1rem;
 }
 
-/* Hervorgehobener Text im Titel */
 .madways-title .highlight {
   color: inherit;
 }
 
-/* Untertitel (einleitender Absatz) */
 .madways-subtext {
   font-size: 1.1rem;
   color: #575757;
   margin-bottom: 1rem;
 }
 
-/* Beschreibung unter dem Untertitel */
 .madways-description {
   font-size: 1.2rem;
   color: #575757;
@@ -58,9 +54,6 @@
   margin-bottom: 2rem;
 }
 
-
-
-/* Button (wie auf Startseite) */
 .madways-button {
   background-color: #f39415;
   color: #fff;
@@ -76,7 +69,6 @@
   display: inline-block;
 }
 
-/* Button-Pfeil (optional) */
 .madways-button-pointer::after {
   content: "";
   position: absolute;
@@ -90,16 +82,15 @@
   border-top: 0.6em solid #f39415;
 }
 
-/* --- Responsive Anpassungen --- */
 @media (max-width: 768px) {
   .madways-overlay {
     top: 10%;
     padding: 1rem;
-    max-width: 90vw; /* NEU: besser skalierbar */
+    max-width: 90vw;
   }
 
   .madways-title {
-    font-size: 2rem; /* kleiner auf mobilen Geräten */
+    font-size: 2rem;
   }
 
   .madways-subtext,
