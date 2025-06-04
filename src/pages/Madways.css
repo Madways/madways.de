@@ -1,12 +1,11 @@
 .madways-hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* statt center */
   justify-content: center;
-  text-align: center;
+  height: 100vh;
+  position: relative;
 }
+
 
 .madways-video-bg {
   position: fixed;
@@ -15,14 +14,19 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1; /* wichtig: kleiner als der Button */
 }
 
 .madways-overlay {
-  z-index: 1;
-  padding: 2rem;
+  width: 100%;
   max-width: 750px;
-  margin-top: -25rem; /* z. B. -3rem nach oben */
+  padding: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 /* Haupttitel */
@@ -53,6 +57,8 @@
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
+
 
 /* Button (wie auf Startseite) */
 .madways-button {
@@ -86,24 +92,24 @@
 
 /* --- Responsive Anpassungen --- */
 @media (max-width: 768px) {
-
   .madways-overlay {
-  z-index: 1;
-  padding: 2rem;
-  max-width: 750px;
-  margin-top: -12rem; /* z. B. -3rem nach oben */
-}
-
-  .madways-title {
-    font-size: 2.2rem;
+    top: 10%;
+    padding: 1rem;
+    max-width: 90vw; /* NEU: besser skalierbar */
   }
 
+  .madways-title {
+    font-size: 2rem; /* kleiner auf mobilen Geräten */
+  }
+
+  .madways-subtext,
   .madways-description {
     font-size: 1rem;
   }
 
-  .madways-subtext {
+  .madways-button {
     font-size: 1rem;
+    padding: 0.6em 1.2em;
   }
 }
 
