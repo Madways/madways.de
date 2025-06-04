@@ -61,7 +61,7 @@
   padding: 0.8em 1.5em;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: 'Bauhaus93', sans-serif;
+  font-family: 'Bauhaus93';
   letter-spacing: 0.05em;
   border: none;
   cursor: pointer;
@@ -91,7 +91,7 @@
   z-index: 1;
   padding: 2rem;
   max-width: 750px;
-  margin-top: -14rem; /* z. B. -3rem nach oben */
+  margin-top: -12rem; /* z. B. -3rem nach oben */
 }
 
   .madways-title {
