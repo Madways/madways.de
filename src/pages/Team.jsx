@@ -46,7 +46,9 @@ function Team() {
           Machen Sie im Internet auf sich aufmerksam!
         </p>
         <p>
-          Unser Ziel ist es, Ihr Unternehmen mit einer Webseite zu fördern, auf welcher Ihre Kunden und Interessenten über Ihre Philosophie, Ihren Standort, Ihre Produkte und Kompetenzen sowie die Öffnungszeiten und schnelle Kontaktmöglichkeiten informiert werden. Und das ganz im individuellen Stil Ihres Unternehmens, mit Bildern der Verkaufsräume und Schaufenster, um keine Fragen offenzulassen.
+          Unser Ziel ist es, Ihr Unternehmen mit einer Webseite zu stärken, die Ihre Kundinnen und Kunden gezielt und ansprechend informiert – über Ihre Werte, Ihren Standort, Ihr Angebot und Ihre Kompetenzen.
+
+Klar strukturiert, mobil optimiert und im Stil Ihres Unternehmens gestaltet – mit authentischen Bildern Ihrer Verkaufsräume oder Schaufenster – sorgt die Seite dafür, dass keine Fragen offenbleiben und der Weg zu Ihnen schnell gefunden wird.
         </p>
       </div>
       <div className="kompetenzen-contact">

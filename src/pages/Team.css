@@ -7,11 +7,13 @@
 
 .team-heading {
   font-family: 'Bauhaus93', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f39415;
+  margin-bottom: 1rem;
   letter-spacing: 0.05em;
-  margin-bottom: 3rem;
+  text-align: center;
 }
+
 
 .team-members {
   display: flex;
