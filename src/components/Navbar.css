@@ -116,6 +116,10 @@
   margin: 0;
 }
 
+.kontakt-link:hover{
+  color: white;
+}
+
 /* === GITHUB ICON === */
 .github-icon {
   display: block;
