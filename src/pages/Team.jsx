@@ -39,16 +39,14 @@ function Team() {
        </div>
 
       <div className="team-description">
-        <h2>Madways hilft Ihnen sich bestmöglich bemerkbar zu machen</h2>
+        <h2>Madways hilft Ihnen, sich bestmöglich bemerkbar zu machen!</h2>
         <p>
-          Wir möchten mit schnellen und bezahlbaren Webseiten kleine bis mittelständische sowie StartUp-Unternehmen unterstützen. 
+          Wir möchten mit schnellen und bezahlbaren Webseiten kleine bis mittelständische sowie Start-ups unterstützen. 
           Sie haben ein kleines oder mittelständisches Unternehmen und überzeugen mit Service, Persönlichkeit und einer guten Kundenbeziehung? 
           Machen Sie im Internet auf sich aufmerksam!
         </p>
         <p>
-          Unser Ziel ist es Ihr Unternehmen mit einer Webseite zu fördern auf welcher Ihre Kunden und Interessenten über Ihre 
-          Philosophie, Ihren Standort, Ihre Produkte und Kompetenzen sowie die Öffnungszeiten und schnelle Kontaktmöglichkeiten informiert werden. 
-          Und das ganz im individuellen Stil Ihres Unternehmens, mit Bildern der Verkaufsräume und Schaufenster um keine Fragen offen zu lassen.
+          Unser Ziel ist es, Ihr Unternehmen mit einer Webseite zu fördern, auf welcher Ihre Kunden und Interessenten über Ihre Philosophie, Ihren Standort, Ihre Produkte und Kompetenzen sowie die Öffnungszeiten und schnelle Kontaktmöglichkeiten informiert werden. Und das ganz im individuellen Stil Ihres Unternehmens, mit Bildern der Verkaufsräume und Schaufenster, um keine Fragen offenzulassen.
         </p>
       </div>
     </div>
