@@ -119,3 +119,15 @@
     font-size: 2rem;
   }
 }
+
+.yellow-link {
+  display: inline-block; /* ← wichtig für margin funktioniert */
+  margin-top: 0.5rem;    /* ← Abstand nach oben */
+  color: #f39415;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.yellow-link:hover {
+  color: #575757; /* helleres Gelb beim Hover */
+}

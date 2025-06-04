@@ -27,11 +27,17 @@ const kompetenzen = [
     title: 'SEO & Performance',
     text: 'Top-Rankings, schnelle Ladezeiten, barrierefrei. Sichtbarkeit technisch & inhaltlich verbessert.',
   },
-  {
-    icon: '/icons/hosting.svg',
-    title: 'Hosting & DevOps',
-    text: 'Vercel, Netlify, eigene Server: CI/CD, SSL, Domains & Deployment, wie es zu Ihrem Projekt passt.',
-  },
+{
+  icon: '/icons/hosting.svg',
+  title: 'Hosting & DevOps',
+  text: (
+    <>
+      Vercel, Netlify, eigene Server: CI/CD, SSL, Domains & Deployment, wie es zu Ihrem Projekt passt.
+      <br />
+      <a href="/preisliste" className="yellow-link">Preisliste ansehen</a>
+    </>
+  )
+},
   {
     icon: '/icons/content.svg',
     title: 'Content Creation & Copywriting',
@@ -43,10 +49,16 @@ const kompetenzen = [
     text: 'Schnelle & individuell gestaltete WordPress-Seiten inklusive Custom-Themes, SEO und Sicherheitspaketen.',
   },
   {
-    icon: '/icons/social.svg',
-    title: 'Mail & Collaboration',
-    text: 'Einrichtung und Betrieb von sicheren E-Mail-Konten, Groupware und Cloud-Lösungen auf Wunsch mit eigener Domain.',
-  },
+  icon: '/icons/social.svg',
+  title: 'Mail & Collaboration',
+  text: (
+    <>
+      Einrichtung und Betrieb von sicheren E-Mail-Konten, Groupware und Cloud-Lösungen auf Wunsch mit eigener Domain.
+      <br />
+      <a href="/preisliste" className="yellow-link">Preisliste ansehen</a>
+    </>
+  )
+},
   {
   icon: '/icons/hardware.svg',
   title: 'Hardware-Entwicklung',

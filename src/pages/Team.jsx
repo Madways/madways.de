@@ -49,6 +49,12 @@ function Team() {
           Unser Ziel ist es, Ihr Unternehmen mit einer Webseite zu fördern, auf welcher Ihre Kunden und Interessenten über Ihre Philosophie, Ihren Standort, Ihre Produkte und Kompetenzen sowie die Öffnungszeiten und schnelle Kontaktmöglichkeiten informiert werden. Und das ganz im individuellen Stil Ihres Unternehmens, mit Bildern der Verkaufsräume und Schaufenster, um keine Fragen offenzulassen.
         </p>
       </div>
+      <div className="kompetenzen-contact">
+          <a href="/kontakt" className="madways-button">
+            ZUM KONTAKT
+            <span className="madways-button-pointer"></span>
+          </a>
+        </div>
     </div>
   );
 }
