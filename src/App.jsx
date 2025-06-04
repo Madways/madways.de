@@ -34,13 +34,13 @@ function App() {
       <div className={`main-content ${shouldShift ? 'shifted' : ''}`}>
         <Routes>
           <Route path="/" element={<Madways />} />
-          <Route path="/kompetenzen" element={<Kompetenzen />} />
-          <Route path="/referenzen" element={<Referenzen consentGiven={consentGiven} />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/kontakt" element={<Kontakt />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/preisliste" element={<Preisliste />} />
-          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/kompetenzen/" element={<Kompetenzen />} />
+          <Route path="/referenzen/" element={<Referenzen consentGiven={consentGiven} />} />
+          <Route path="/team/" element={<Team />} />
+          <Route path="/kontakt/" element={<Kontakt />} />
+          <Route path="/impressum/" element={<Impressum />} />
+          <Route path="/preisliste/" element={<Preisliste />} />
+          <Route path="/datenschutz/" element={<Datenschutz />} />
         </Routes>
       </div>
     </Router>

@@ -50,9 +50,9 @@ const Navbar = ({ isOpen, setIsOpen, isDesktop }) => {
         {/* Navigation */}
         <nav onClick={closeMenu}>
           <NavLink to="/" end>MADWAYS</NavLink>
-          <NavLink to="/kompetenzen">KOMPETENZEN</NavLink>
-          <NavLink to="/referenzen">REFERENZEN</NavLink>
-          <NavLink to="/team">TEAM</NavLink>
+          <NavLink to="/kompetenzen/">KOMPETENZEN</NavLink>
+          <NavLink to="/referenzen/">REFERENZEN</NavLink>
+          <NavLink to="/team/">TEAM</NavLink>
         </nav>
 
         {/* Footer: GitHub & Kontakt */}
@@ -65,7 +65,7 @@ const Navbar = ({ isOpen, setIsOpen, isDesktop }) => {
           >
             <img src="/github.svg" alt="GitHub" />
           </a>
-          <NavLink to="/kontakt" className="kontakt-link" onClick={closeMenu}>
+          <NavLink to="/kontakt/" className="kontakt-link" onClick={closeMenu}>
             KONTAKT
           </NavLink>
         </div>
