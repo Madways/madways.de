@@ -6,6 +6,9 @@ function Team() {
     <div className="team-wrapper">
       <h1 className="team-heading">TEAM</h1>
 
+<p className="kompetenzen-intro">
+         Seit über einem Jahrzehnt arbeiten wir als Team zusammen – mit Erfahrung, Verlässlichkeit und echter Leidenschaft für jedes Projekt, das wir annehmen.
+        </p>
       <div className="team-members">
    
 
