@@ -15,7 +15,7 @@ const kompetenzen = [
   {
     icon: '/icons/code.svg',
     title: 'Webentwicklung & CMS',
-    text: 'Skalierbare Web-Lösungen mit React, Next.js, Strapi, WordPress. Schnell, sicher & flexibel.',
+    text: 'Skalierbare Web-Lösungen mit React, Next.js, getbootstrap, WordPress. Schnell, sicher & flexibel.',
   },
   {
     icon: '/icons/ecommerce.svg',
@@ -32,7 +32,7 @@ const kompetenzen = [
   title: 'Hosting & DevOps',
   text: (
     <>
-      Vercel, Netlify, eigene Server: CI/CD, SSL, Domains & Deployment, wie es zu Ihrem Projekt passt.
+      Auf unserem Madways-Server (oder einem deiner Wahl) : CI/CD, SSL, Domains & Deployment, wie es zu Ihrem Projekt passt.
       <br />
       <a href="/preisliste" className="yellow-link">Preisliste ansehen</a>
     </>
@@ -53,7 +53,7 @@ const kompetenzen = [
   title: 'Mail & Collaboration',
   text: (
     <>
-      Einrichtung und Betrieb von sicheren E-Mail-Konten, Groupware und Cloud-Lösungen auf Wunsch mit eigener Domain.
+      Einrichtung und Betrieb von sicheren E-Mail-Konten, Groupware und Cloud-Lösungen mit deiner Wunsch-Domain.
       <br />
       <a href="/preisliste" className="yellow-link">Preisliste ansehen</a>
     </>
