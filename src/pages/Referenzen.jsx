@@ -77,6 +77,17 @@ const projekte = [
       'Bestellabwicklung'
     ]
   },
+  {
+  url: 'https://acz.space/',
+  title: 'ACZ Wiesenburg',
+  beschreibung: 'Website für ein kreatives Zentrum in Brandenburg mit Werkstätten, Ateliers und gemeinschaftlich genutzten Flächen.',
+  technik: '/icons/wordpress.svg',
+  leistungen: [
+    'WordPress-Setup',
+    'Inhaltsstruktur & Gestaltung',
+    'Kontakt- und Infointegration'
+  ]
+}
   // {
   //   url: 'https://www.drehscheibe-juk.de/',
   //   title: 'Drehscheibe JUK',
