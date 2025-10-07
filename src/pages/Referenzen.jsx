@@ -87,6 +87,16 @@ const projekte = [
     'Inhaltsstruktur & Gestaltung',
     'Kontakt- und Infointegration'
   ]
+},
+  {
+  url: 'https://edelweiss-reisen.de/',
+  title: 'Edelweiß-Reisen',
+  beschreibung: 'Website des Reise- und Linienbusunternehmens aus München. Präsentiert Shuttle- & Transferleistungen, Reisebusvermietung, Linienverkehr, Unternehmenschronik seit 1930 sowie ein Kontakt-/Angebotsformular.',
+  technik: '/icons/wordpress.svg',
+  leistungen: [
+    'Website-Konzeption & Layout',
+    'Kontakt- und Infointegration'
+  ]
 }
   // {
   //   url: 'https://www.drehscheibe-juk.de/',
