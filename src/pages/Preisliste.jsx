@@ -137,16 +137,10 @@ function Preisliste() {
             </thead>
             <tbody>
               <tr>
-                <td>Account</td>
-                <td>1 Account</td>
-                <td>1 Account</td>
-                <td>1 Account</td>
-              </tr>
-              <tr>
-                <td>Adressen</td>
-                <td>3 Adressen</td>
-                <td>+10 Adressen</td>
-                <td>∞ Adressen</td>
+                <td>Accounts / Addressen</td>
+                <td>1 Addresse</td>
+                <td>+10 Addressen</td>
+                <td>∞ Addressen</td>
               </tr>
               <tr>
                 <td>Speicherplatz</td>
