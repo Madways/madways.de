@@ -1,9 +1,9 @@
 import './Preisliste.css';
 
-function Preisliste() {
+function Preisliste_25() {
   return (
     <div className="preisliste-wrapper">
-      <h1 className="preisliste-title">Preisliste ab 2026</h1>
+      <h1 className="preisliste-title">Preisliste bis Ende 2025</h1>
 
       <div className="preistabelle">
         {/* Webhosting */}
@@ -39,8 +39,8 @@ function Preisliste() {
               </tr>
               <tr className="preise">
                 <td>Preis</td>
-                <td>4 €</td>
-                <td>10 €</td>
+                <td>3 €</td>
+                <td>8 €</td>
                 <td>25 €</td>
               </tr>
             </tbody>
@@ -80,8 +80,8 @@ function Preisliste() {
               </tr>
               <tr className="preise">
                 <td>Preis</td>
-                <td>4 €</td>
-                <td>10 €</td>
+                <td>3 €</td>
+                <td>8 €</td>
                 <td>25 €</td>
               </tr>
             </tbody>
@@ -95,24 +95,29 @@ function Preisliste() {
             <thead>
               <tr>
                 <th></th>
-                <th>Einrichtung</th>
                 <th>Basic</th>
-
+                <th>Add-On</th>
+                <th>Add-On</th>
               </tr>
             </thead>
             <tbody>
-             
+              <tr>
+                <td>Account</td>
+                <td>1 Account</td>
+                <td>1 Account</td>
+                <td>1 Account</td>
+              </tr>
               <tr>
                 <td>Speicherplatz</td>
-                <td>-</td>
-                <td>1 TB</td>
-                
+                <td>3 GB</td>
+                <td>+100 GB</td>
+                <td>+600 GB</td>
               </tr>
               <tr className="preise">
                 <td>Preis</td>
-                <td>50 €</td>
-                <td>10 €</td>
-                
+                <td>3 €</td>
+                <td>+10 €</td>
+                <td>+50 €</td>
               </tr>
             </tbody>
           </table>
@@ -132,10 +137,16 @@ function Preisliste() {
             </thead>
             <tbody>
               <tr>
-                <td>Accounts / Addressen</td>
-                <td>1 Addresse</td>
-                <td>+10 Addressen</td>
-                <td>∞ Addressen</td>
+                <td>Account</td>
+                <td>1 Account</td>
+                <td>1 Account</td>
+                <td>1 Account</td>
+              </tr>
+              <tr>
+                <td>Adressen</td>
+                <td>3 Adressen</td>
+                <td>+10 Adressen</td>
+                <td>∞ Adressen</td>
               </tr>
               <tr>
                 <td>Speicherplatz</td>
@@ -145,8 +156,8 @@ function Preisliste() {
               </tr>
               <tr className="preise">
                 <td>Preis</td>
-                <td>4 €</td>
-                <td>+4 €</td>
+                <td>3 €</td>
+                <td>+3 €</td>
                 <td>25 €</td>
               </tr>
             </tbody>
@@ -164,7 +175,7 @@ function Preisliste() {
         
       </tr>
       <tr>
-         <td><strong>4 €</strong></td>
+         <td><strong>3 €</strong></td>
         <td><strong>auf Anfrage</strong></td>
         
       </tr>
@@ -172,10 +183,10 @@ function Preisliste() {
   </table>
 </section>
 
-        <p className="hinweis">Alle Preise monatlich inkl. MwSt.<br />Stand: 01 / 2026</p>
+        <p className="hinweis">Alle Preise monatlich inkl. MwSt.<br />Stand: 03 / 2021</p>
       </div>
     </div>
   );
 }
 
-export default Preisliste;
+export default Preisliste_25;

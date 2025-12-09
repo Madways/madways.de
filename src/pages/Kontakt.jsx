@@ -30,7 +30,8 @@ function Kontakt() {
   <div className="footer-links-row">
     <a href="/impressum">Impressum</a>
     <a href="/Madways-UG_AGBs_November2020.pdf" target="_blank" rel="noreferrer">AGB</a>
-    <a href="/preisliste">Preisliste</a>
+    <a href="/preisliste">Preisliste ab 2026</a>
+    <a href="/preisliste_25">Preisliste bis 2025</a>
   </div>
   <div className="footer-consent-row">
     <a
